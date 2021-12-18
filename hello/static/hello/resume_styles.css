@@ -1,0 +1,156 @@
+/* Whole document */
+/*body {*/
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*    !*width: 2480px;*!*/
+/*    width: 210mm;*/
+/*    height: 297mm;*/
+/*    !*height: 3508px;*!*/
+/*    margin: auto;*/
+/*    background: #FFFFFF;*/
+/*    padding: 0;*/
+/*    !*padding: 10px 10px 10px 10px;*!*/
+/*}*/
+/* For converting to PDF */
+/*@page {*/
+/*  margin:0;*/
+/*  padding: 0;*/
+/*}*/
+
+.info-banner {
+    display: flex;
+    max-height: 170px;
+    padding-left: 12px;
+    /*border: 1px solid black;*/
+}
+
+.personal-info {
+    flex-grow: 1;
+    font-family:'Abel', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px auto 10px auto;
+}
+
+.avatar {
+    z-index: 100;
+    /*width: 170px;*/
+    /*height: 170px;*/
+    position: relative;
+
+}
+
+.avatar img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 auto -20px auto;
+    z-index: 10;
+    /*position: relative;*/
+    /*border-color: black;*/
+
+}
+
+.name {
+    margin: 0;
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+.job-title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.find-me {
+    font-size: 15px;
+    /*vertical-align: middle;*/
+    display: flex;
+}
+
+.find-me span {
+    flex-grow: 1;
+}
+
+.find-me img {
+    width: auto;
+    height: 15px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+    /*background-color: lightgrey;*/
+    /*border-radius: 50%;*/
+    margin-right: 5px;
+    margin-left: 3px;
+}
+
+.main-body {
+    display: flex;
+    color: white;
+    /*height: 955px;*/
+    font-family: 'Source Sans Pro', serif;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 3px;
+}
+
+.column {
+    background-color: #404040;
+    /*height: 100%;*/
+    padding-left: 10px;
+    text-align: left;
+}
+
+.left-column {
+    width: 55%;
+}
+
+.right-column {
+    width: 45%;
+    padding-right: 10px;
+}
+
+p {
+    /*padding-bottom: 15px;*/
+    margin: 0;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+ul {
+    margin: 0;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+h4 {
+    /*color: #ff9500ff;*/
+    color: orange;
+    font-size: 13px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.main-body li {
+    font-size: 12px;
+}
+
+a {
+    color: deepskyblue;
+}
+
+.main-body li span {
+    padding-left: 10px;
+}
+
+/*.main-body ul {*/
+/*    padding-left: 20px;*/
+/*}*/

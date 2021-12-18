@@ -1,0 +1,192 @@
+{% extends 'hello/template.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+<div class="info-banner">
+    <div class="personal-info">
+        <div class="name">Nicholas Henderson</div>
+        <div class="job-title">Python Developer</div>
+        <div class="find-me">
+                <span>
+                    <img alt="email: " src="{% static 'hello/mail_orange.svg' %}"/>nhenderson019@gmail.com
+                </span>
+            <span>
+                    <img alt="phone: " src="{% static 'hello/phone_orange.svg' %}"/>+61 457 960 400
+                </span>
+            <span>
+                    <img alt="location: " src="{% static 'hello/location_orange.svg' %}"/>Brisbane
+                </span>
+            <span>
+                    <img alt="GitHub: " src="{% static 'hello/location_orange.svg' %}"/><a href="https://github.com/nickhendo">github.com/nickhendo</a>
+                </span>
+        </div>
+    </div>
+<!--    <div class="avatar">-->
+<!--        <img alt="avatar-img" src="../images/profile_circle.png"/>-->
+<!--    </div>-->
+</div>
+<div class="main-body">
+    <div class="column left-column">
+        <div class="summary">
+            <h1>Summary</h1>
+            <p>A Python developer of 4 years, with a love for well written, idiomatic Python. I
+                have experience in a variety of Agile environments, as well as good, technical
+                understanding of CI/CD and its implementations.</p>
+        </div>
+        <div class="development-experience">
+            <h1>Development Experience</h1>
+            <div class="Deep Future">
+                <h4>Python Developer • Deep Future • Feb 2021 - Present</h4>
+                <ul>
+                    <li>Key member of small team of 3 in tech startup developing fully scalable application</li>
+                    <li>Personally developed proprietary scraping methodology to circumvent anti-scraping measures</li>
+                    <li>Development of robust web scraping systems leveraging numerous frameworks</li>
+                    <li>Web scraping system implemented in AWS: Cloudformation, Lambda, EC2, REDIS, ECS, etc...</li>
+                    <li>Discovery and selection of new data sources to support the platform</li>
+                    <li>Broad range of supplementary responsibilities, such as Jira administration,
+                        sprint planning, etc.</li>
+                    <li>Chrome orchestration through leveraging low-level Chrome DevTools Protocol</li>
+                    <li>Sourcing, management and implementation of 3rd party proxy services</li>
+                    <li>Full ECS implementation of Selenium Grid in AWS as part of web scraping</li>
+                </ul>
+            </div>
+            <div class="movus">
+                <h4>Python Developer • MOVUS • Apr 2020 - Feb 2021</h4>
+                <ul>
+                    <li>Idiomatic python development on repositories with over 120k lines of code</li>
+                    <li>Focus on API development for both mobile and web UI as well as customer integrations</li>
+                    <li>Leveraging AWS Lambda, API Gateway, EC2 spot instances and a variety of other AWS resources</li>
+                    <li>Development and execution of SQL DB Migrations</li>
+                    <li>Expansion of Ansible playbooks and integration into CI/CD systems</li>
+                    <li>Regular iterative releases involving dependency management with CI/CD systems</li>
+                    <li>Pytest - integration and unit test management and restructure for optimised performance
+                        mocking requests for local integration test execution, heavy test driven development</li>
+                </ul>
+            </div>
+            <div class="boeing">
+                <h4>DevOps Engineer • Boeing Defence Australia • Oct 2019 - Apr 2020</h4>
+                <ul>
+                    <li>Part of a 12 month major project in developing repositories of Ansible
+                        playbooks to automate entire ACCC system deployment to replace legacy systems
+                    </li>
+                    <li>Working with a team of roughly 12 people, with around 100 across the
+                        project, working as a Scaled Agile development environment
+                    </li>
+                    <li>Automated deployment and management of entire CI/CD system, comprising at
+                        least 10 different build servers, as well as their configurations to allow
+                        seemless integration of all components
+                    </li>
+                    <li>Maintain high level of secure, auditable business practices</li>
+                    <li>Participation in Scaled Agile Framework (SAFe) training</li>
+                    <li>NV1 (Secret) security clearance.
+                    </li>
+                </ul>
+            </div>
+            <div class="statseeker">
+                <h4>QA Automation Engineer • Tech:niche • Aug 2018 - Oct 2019</h4>
+                <ul>
+                    <li>Personally implemented entire automation solution with GoCD, Ansible,
+                        Python, and a variety of frameworks
+                    </li>
+                    <li>Developing automated testing suites in python with a heavy focus on
+                        a range of different APIs
+                    </li>
+                    <li>Enhanced efficiency of regression testing by a factor of 30x, taking
+                        a 3 week process down to an automated system running every single night,
+                        drastically reducing lead time
+                    </li>
+                    <li>Development and management of automated test and reporting suites utilizing
+                        Gauge's test automation framework for Python, along with selenium and
+                        Testrail for reporting
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="column right-column">
+        <div class="education">
+            <h1>Education</h1>
+            <p>BSc, Mathematics Extended Major from the University of Queensland. Some key
+                elements include Operations Research and Mathematical Planning (Optimisation with
+                Python) and Scientific Computing.</p>
+        </div>
+        <div class="other-experience">
+            <h1>Other Experience</h1>
+            <div class="research">
+                <h4>Physics Research Scholar • University of Queensland • Dec 2014 -
+                    Feb 2015</h4>
+                <ul>
+                    <li>Selected for placement with university researcher/lecturer</li>
+                    <li>Research involved visualizing hyper sonic airflow as part of the HIFiRE
+                        Program
+                    </li>
+                    <li>Conducted a range of physics based optics experiments involving
+                        <ul>
+                            <li>Imaging equipment and software</li>
+                            <li>Optical tables</li>
+                            <li>Diffraction gratings</li>
+                            <li>LEDs</li>
+                        </ul>
+                    </li>
+                    <li>Detailed reporting on experimental results</li>
+                    <li>Demonstrated consequences of wave-particle duality through double-slit
+                        experiment
+                    </li>
+                </ul>
+            </div>
+</div>
+        <div class="skills">
+            <h1>Skills</h1>
+            <ul>
+                <li>
+                    Various AWS services, such as:
+                    <ul>
+                        <li>Cloudformation</li>
+                        <li>Lambda</li>
+                        <li>EC2/EC2 Spot</li>
+                        <li>ECS</li>
+                        <li>Cloudwatch</li>
+                        <li>SQS</li>
+                        <li>Etc...</li>
+                    </ul>
+                </li>
+                <li>Django</li>
+                <li>Docker</li>
+                <li>Ansible</li>
+                <li>GIT</li>
+                <li>Swagger (the OpenAPI spec, not the attitude)</li>
+                <li>CI/CD methodologies and tooling</li>
+                <li>Atlassian suite: Jira, Confluence, Bitbucket</li>
+                <li>Agile framework (Including at SAFe)</li>
+            </ul>
+        </div>
+        <div class="personal-projects">
+            <h1>Personal Projects</h1>
+            <p>I am always busy working on different projects in my spare time, trying out new
+                technologies and improving my own skills. Some of these include:</p>
+            <ul>
+                <li>This resume! It's built entirely from html and css, converted to pdf.
+                    Reach out to me directly if you'd like to see the source code!
+                <li>YNAB (YouNeedABudget) API library for interfacing and automating personal budgeting
+                </li>
+                <li>Workplace <a href="http://github.com/nickhendo/roster-optimisation">
+                    rostering optimisation</a> application using Python and Google OR-tools
+                </li>
+                <li>A <a href="https://github.com/nickhendo/toy-robot-simulator">toy robot
+                    simulator</a> to display some nice idiomatic python development
+                </li>
+            </ul>
+            <p>Check them out on my <a href="https://github.com/nickhendo">GitHub</a> page</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

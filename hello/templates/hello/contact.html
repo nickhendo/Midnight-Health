@@ -1,0 +1,19 @@
+{% extends "hello/template.html" %}
+
+{%  block content %}
+{% load static %}
+<div style="text-align: center;">
+    <div style="display: inline-block; text-align: left;">
+    <h1>Contact Me</h1>
+    <p>
+        <img alt="email: " src="{% static 'hello/mail_orange.svg' %}"/> nhenderson019@gmail.com
+    </p>
+    <p>
+        <img alt="phone: " src="{% static 'hello/phone_orange.svg' %}"/> +61 457 960 400
+    </p>
+    <p>
+        <img alt="location: " src="{% static 'hello/location_orange.svg' %}"/> Brisbane
+    </p>
+    </div>
+</div>
+{% endblock %}
